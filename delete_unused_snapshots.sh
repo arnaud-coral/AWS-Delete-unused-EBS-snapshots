@@ -40,6 +40,6 @@ else
         aws ec2 delete-snapshot --snapshot-id $snapshotId
     done
 fi
-echo "Done, found $(( ${#SNAPSHOT_IDS[@]} - 1 )) snapshot(s)"
+echo "Done, found $I snapshot(s)"
 
 exit 0
