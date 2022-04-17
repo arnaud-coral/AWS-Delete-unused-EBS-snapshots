@@ -31,10 +31,9 @@ if "$DRYRUN"; then
         echo "$I - Found snapshotId $snapshotId"
     done
 else
-    echo 'Deleting snapshots'
+    echo 'Entering delete mode'
     # Delete the snapshots
     for snapshotId in $SNAPSHOT_IDS; do
-        echo 'Entering delete mode'
         I=$((I+1))
         echo "$I - Deleting snapshotId $snapshotId"
         aws ec2 delete-snapshot --snapshot-id $snapshotId
