@@ -1,7 +1,7 @@
 # **AWS Delete unused EBS snapshots**
 
 # 🎯 Aim
-A little bash script to delete unused AWS Elastic Block Store snapshots (not linked to any volume)
+A little bash script to delete unused AWS Elastic Block Store snapshots (not linked to any AMI)
 
 <br />
 
